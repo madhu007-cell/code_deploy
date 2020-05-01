@@ -1,0 +1,8 @@
+<powershell>
+$url = “https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/codedeploy-agent.msi”
+
+Invoke-WebRequest -Uri $url -Outfile c:\codedeploy-agent.msi
+
+c:\codedeploy-agent.msi /quiet /l c:\codedeploy-agent-install.log
+</powershell>
+
